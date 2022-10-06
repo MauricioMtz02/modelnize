@@ -1,26 +1,235 @@
-html,
-body {
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  transition: all ease .3s;
+}
+
+ul{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-* {
-  box-sizing: border-box;
+p{
+  line-height: 2.4;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+h3{
+  line-height: 1.5;
+}
+
+.nav-principal{
+  transition: all ease .4s;
+}
+
+.nav-principal.fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 8;
+}
+
+.nav-principal .enlaces{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  transition: all ease .3s;
+  clip-path: circle(70.7% at 145% -70%);
+  z-index: 9;
+}
+
+.nav-principal .enlaces.show{
+  clip-path: circle(70.7% at 50% 50%);
+}
+
+@media (min-width: 992px){
+  .nav-principal .enlaces{
+      width: auto;
+      background-color: unset;
+      position: static;
+      clip-path: unset;
   }
-  body {
-    color: white;
-    background: black;
+
+  .nav-principal .enlaces.show{
+      clip-path: unset;
   }
+}
+
+
+.menu-activador {
+	width: 30px;
+	height: 20px;
+}
+.menu-activador #lanzador {
+	position: absolute;
+	left: -9999px;
+}
+.menu-activador label {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	cursor: pointer;
+}
+.menu-activador .menu-activador-linea {
+	height: 2px;
+	opacity: 1;
+	transform: translateY(0) rotate(0);
+	transition: all ease 0.3s;
+}
+.menu-activador #lanzador:checked ~ label .menu-activador-linea:nth-child(1) {
+	transform: translateY(9px) rotate(45deg);
+}
+.menu-activador #lanzador:checked ~ label .menu-activador-linea:nth-child(2) {
+	opacity: 0;
+}
+.menu-activador #lanzador:checked ~ label .menu-activador-linea:nth-child(3) {
+	transform: translateY(-9px) rotate(-45deg);
+}
+
+.burbuja{
+  position: absolute;
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px){
+  .burbuja{
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 992px){
+  .burbuja{
+    width: 16rem;
+  height: 16rem;
+  }
+}
+
+.burbujas{
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: .5;
+}
+
+.burbujas .burbuja:nth-child(1){
+  background: var(--bs-primary);
+  background: linear-gradient(0deg, var(--bs-primary) 0%, rgba(255,255,255,0) 100%);
+  bottom: 0%;
+  left: 15%;
+}
+
+.burbujas .burbuja:nth-child(2){
+  background: var(--bs-secondary);
+  background: linear-gradient(0deg, var(--bs-secondary) 0%, rgba(255,255,255,0) 100%);
+  top: 40%;
+  left: 38%;
+}
+
+.burbujas .burbuja:nth-child(3){
+  background: var(--bs-info);
+  background: linear-gradient(0deg, var(--bs-info) 0%, rgba(255,255,255,0) 100%);
+  bottom: 16%;
+  right: 0%;
+}
+
+@media (min-width: 768px){
+  .burbujas .burbuja:nth-child(1){
+    bottom: 0%;
+    left: 10%;
+  }
+  
+  .burbujas .burbuja:nth-child(2){
+    top: 30%;
+    left: 40%;
+  }
+  
+  .burbujas .burbuja:nth-child(3){
+    bottom: 16%;
+    right: 5%;
+  }
+}
+
+@media (min-width: 992px){
+  .burbujas .burbuja:nth-child(1){
+    bottom: 20%;
+    left: 15%;
+  }
+  
+  .burbujas .burbuja:nth-child(2){
+    top: 30%;
+    left: 40%;
+  }
+  
+  .burbujas .burbuja:nth-child(3){
+    bottom: 16%;
+    right: 15%;
+  }
+}
+
+@media (min-width: 1600px){
+  .burbujas .burbuja:nth-child(1){
+    bottom: 20%;
+    left: 20%;
+  }
+  
+  .burbujas .burbuja:nth-child(2){
+    top: 30%;
+    left: 40%;
+  }
+  
+  .burbujas .burbuja:nth-child(3){
+    bottom: 16%;
+    right: 20%;
+  }
+}
+
+.proyecto .logo{
+    z-index: 5;
+}
+
+.proyecto .cortina-negra{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    opacity: .35;
+}
+
+.proyecto .btn{
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all ease .3s !important;
+    z-index: 6;
+}
+
+.proyecto:hover .btn{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.proyecto:hover .logo{
+    transform: translateX(-50%)!important;
+    opacity: 0;
+}
+
+.proyecto:hover .cortina-negra{
+  opacity: 0;
 }
