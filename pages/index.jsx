@@ -17,37 +17,37 @@ export default function HomePage() {
                     <Gestion/>
                 </div>
 
-                <div className='mt-0 mt-sm-4 mt-lg-5 py-4 py-lg-5'>
+                <div className='mt-0 mt-4 mt-lg-5 py-4 py-lg-5'>
                     <Productos/>
                 </div>
 
-                <div className='py-4 py-lg-5'>
+                <div className='mt-4 py-4 py-lg-5'>
                     <Avanzando/>
                 </div>
 
-                <div className='py-4 py-lg-5'>
+                <div className='mt-4 py-4 py-lg-5'>
                     <Paquetes/>
                 </div>
             </div>
 
-            <div className='py-4 py-lg-5'>
+            <div className='mt-4 py-4 py-lg-5'>
                 <Buscador/>
             </div>
 
             <div className='mx-auto col-11 col-sm-10 col-md-9'>
-                <div className='py-4 py-lg-5'>
+                <div className='mt-4 py-4 py-lg-5'>
                     <Portafolio/>
                 </div>
 
-                <div className='py-4 py-lg-5'>
+                <div className='mt-4 py-4 py-lg-5'>
                     <Nosotros/>
                 </div>
 
-                <div className='py-4 py-lg-5'>
+                <div className='mt-4 py-4 py-lg-5'>
                     <Contacto/>
                 </div>
 
-                <div className='py-4 py-lg-5'>
+                <div className='mt-4 py-4 py-lg-5'>
                     <Testimonios/>
                 </div>
             </div>

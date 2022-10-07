@@ -8,7 +8,7 @@ const Buscador = () => {
                 <Section
                     first={(
                         <>
-                            <div>
+                            <div className="mb-4 mb-lg-0">
                                 <h3>Agrégale un <span className="text-primary">.com</span> a tu negocio</h3>
                                 <p className="mb-0">Mediante un dominio sus clientes podrán en internet, es la forma amigable de localizar su sitio en la web.</p>
                             </div>

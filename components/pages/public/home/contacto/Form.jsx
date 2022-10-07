@@ -9,7 +9,7 @@ const Form = () => {
     return (
         <form 
             onSubmit={handleSubmit}
-            className="bg-white p-3 p-sm-4 p-md-5 rounded-4 shadow-sm"
+            className="bg-white p-4 p-md-5 rounded-4 shadow-sm"
         >
             <div className="row g-0 gx-md-4 text-dark">
                 <div className="col-md-12 mb-4">

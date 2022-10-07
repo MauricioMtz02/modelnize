@@ -12,7 +12,7 @@ const Paquete = () => {
                 <div className="my-5">
                     <p className="mb-0 d-flex align-items-start justify-content-center text-dark">
                         <span className="fs-4 me-2 fw-bold">$</span>
-                        <span className="display-4 fw-bold">5,999</span>
+                        <span className="display-4 fw-bold">0,000</span>
                     </p>
                 </div>
 
