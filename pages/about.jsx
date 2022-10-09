@@ -1,10 +1,23 @@
+import Acerca from '../components/pages/public/about/Acerca'
+import Banner from '../components/pages/public/about/Banner'
+import Tecnologias from '../components/pages/public/about/Tecnologias'
 import Layout from '../layouts/Layout'
 
 export default function AboutPage() {
     return (
         <>
             <div className='mx-auto col-11 col-sm-10 col-md-9'>
-                <h1 className='text-dark'>Hola desde Acerca De</h1>
+                <Banner/>
+            </div>
+
+            <div className="mt-4 py-4 py-lg-5">
+                <Tecnologias/>
+            </div>
+
+            <div className='mx-auto col-11 col-sm-10 col-md-9'>
+                <div className="mt-4 py-4 py-lg-5">
+                    <Acerca/>
+                </div>
             </div>
         </>
     )

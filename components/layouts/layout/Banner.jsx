@@ -19,7 +19,7 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <div className='mt-5 d-flex justify-content-center mw-100'>
+                <div data-aos="zoom-in" className='mt-5 d-flex justify-content-center mw-100'>
                     <div className='rounded-3'>
                         <video className='rounded-3 img-fluid shadow' autoPlay muted loop width={700} height={380}>
                             <source src='/videos/banner.mp4' />

@@ -15,6 +15,7 @@ const Nav = () => {
 
                 <Enlaces
                     navShow={navShow}
+                    setNavShow={setNavShow}
                 />
 
                 <div className='d-flex align-items-center'>
@@ -27,6 +28,7 @@ const Nav = () => {
                     </Link>
 
                     <Hambur
+                        navShow={navShow}
                         setNavShow={setNavShow}
                     />
                 </div>

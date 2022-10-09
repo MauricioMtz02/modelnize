@@ -14,7 +14,7 @@ const Nosotros = () => {
                     </div>
                     
 
-                    <Link href={'/'}>
+                    <Link href={'/about'}>
                         <a className='btn btn-primary text-white'>Ver Más</a>
                     </Link>
                 </div>

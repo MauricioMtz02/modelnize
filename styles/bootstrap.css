@@ -86,6 +86,10 @@ body.dark-mode{
   --bs-black: #ffffff;
 }
 
+body.dark-mode .tecnologia{
+  filter: invert(1);
+}
+
 *,
 *::before,
 *::after {
