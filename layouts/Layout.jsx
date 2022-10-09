@@ -24,9 +24,9 @@ const Layout = ({page, children}) => {
 
                 <meta name="robots" content="index" />
                 <meta name="keywords" content='aplicaciones, tecnologia, moderno, web, sitios, administrar, negocio, digital, blog, diseño, desarrollo, proyecto, programa, aplicacion, programas, sistemas, sistema' />
-                <meta property="og:image" content={`/img/logo.svg`} />
-                <meta property="og:image:url" content={`/img/logo.svg`} />
-                <meta property="og:image:secure_url" content={`/img/logo.svg`} />
+                <meta property="og:image" content={`/img/logo-chrome.png`} />
+                <meta property="og:image:url" content={`/img/logo-chrome.png`} />
+                <meta property="og:image:secure_url" content={`/img/logo-chrome.png`} />
 
                 <meta itemProp="name" content='Modelnize diño y desarrollo de aplicaciones web' />
                 <meta itemProp="headline" content='Modelnize diño y desarrollo de aplicaciones web' />
