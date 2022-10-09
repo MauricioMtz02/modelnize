@@ -233,3 +233,19 @@ h3{
 .proyecto:hover .cortina-negra{
   opacity: 0;
 }
+
+@keyframes girar {
+  0%{
+      transform: rotate(0);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+.girar::before{
+  display: block;
+  width: fit-content;
+  margin: 0!important;
+  animation: girar 1.5s ease infinite;
+}
