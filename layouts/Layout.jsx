@@ -21,7 +21,7 @@ const Layout = ({page, children}) => {
                     name='description'
                     content='Diseño y Desarrollo de Aplicaciones Web'
                 />
-
+                <meta name="theme-color" content="#007BFF"/>
                 <meta name="robots" content="index" />
                 <meta name="keywords" content='aplicaciones, tecnologia, moderno, web, sitios, administrar, negocio, digital, blog, diseño, desarrollo, proyecto, programa, aplicacion, programas, sistemas, sistema' />
                 <meta property="og:image" content={`/img/logo-chrome.png`} />
