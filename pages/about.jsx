@@ -1,6 +1,7 @@
 import Acerca from '../components/pages/public/about/Acerca'
 import Banner from '../components/pages/public/about/Banner'
 import Tecnologias from '../components/pages/public/about/Tecnologias'
+import Valores from '../components/pages/public/about/valores'
 import Layout from '../layouts/Layout'
 
 export default function AboutPage() {
@@ -17,6 +18,10 @@ export default function AboutPage() {
             <div className='mx-auto col-11 col-sm-10 col-md-9'>
                 <div className="mt-4 py-4 py-lg-5">
                     <Acerca/>
+                </div>
+
+                <div className="mt-4 py-4 py-lg-5">
+                    <Valores/>
                 </div>
             </div>
         </>
