@@ -1,6 +1,6 @@
 const Caracteristicas = () => {
     return (
-        <ul className="text-dark text-center">
+        <ul className="p-0 text-dark text-center">
            <li className="border-bottom py-2">Lorem Ipsum</li>
            <li className="border-bottom py-2">Lorem Ipsum</li>
            <li className="border-bottom py-2">Lorem Ipsum</li>
