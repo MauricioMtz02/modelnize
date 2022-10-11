@@ -1,5 +1,6 @@
 import Acerca from '../components/pages/public/about/Acerca'
 import Banner from '../components/pages/public/about/Banner'
+import Contacto from '../components/pages/public/about/Contacto'
 import Hero from '../components/pages/public/about/Hero'
 import Metodologia from '../components/pages/public/about/metodologia'
 import Tecnologias from '../components/pages/public/about/Tecnologias'
@@ -35,7 +36,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="mt-4 py-4 py-lg-5">
-                    Contacto
+                    <Contacto/>
                 </div>
             </div>
         </>
