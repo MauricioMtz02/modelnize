@@ -31,7 +31,7 @@ const Nav = () => {
     }, [fixed])
 
     return (
-        <nav className={`nav-principal bg-light ${fixed ? 'fixed shadow-sm border-bottom py-3' : 'py-4'}`}>
+        <nav className={`nav-principal bg-light ${fixed ? 'fixed shadow-sm border-bottom py-3 border-dark border-opacity-10' : 'py-4'}`}>
             <div className='col-11 mx-auto d-flex justify-content-between align-items-center'>
                 <Logo/>
 
