@@ -55,7 +55,7 @@ const DesignThinking = () => {
             }
         
             last={
-                <div className="bg-white rounded-4 p-3 px-4">
+                <div className="bg-white rounded-4 p-3 px-4 shadow-sm text-dark">
                     <h6 className='d-flex align-items-center'>
                         <p
                             style={{
