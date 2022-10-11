@@ -249,3 +249,23 @@ h3{
   margin: 0!important;
   animation: girar 1.5s ease infinite;
 }
+
+.img-hero{
+  transform: translateY(1.5%);
+  
+}
+
+@media (min-width: 992px){
+  .img-hero{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(1.8%);
+    right: 5%;
+  }
+}
+
+@media (min-width: 1200px){
+  .img-hero{
+    right: 15%;
+  }
+}

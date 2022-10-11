@@ -9,7 +9,7 @@ const Gestion = () => {
                 <>
                     <div>
                         <h3>Controla y gestiona la información de tu negocio</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, omnis voluptatibus! Reiciendis placeat delectus omnis maxime inventore eius nesciunt totam magnam natus sit.</p>
+                        <p>Con el desarrollo de un sistema a su medida es posible gestionar toda la información de su negocio, cómo administrar sus productos y consultar sus reportes y ventas.</p>
                     </div>
                     
 

@@ -8,6 +8,7 @@ const Form = () => {
 
     return (
         <form 
+            id="contacto"
             onSubmit={handleSubmit}
             className="bg-white p-4 p-md-5 rounded-4 shadow-sm"
         >
