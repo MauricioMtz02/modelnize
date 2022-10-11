@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Banner = () => {
     return (
-        <section className="py-5 position-relative">
+        <section className="pb-5 position-relative bg-light">
             <div className="mx-auto col-11 col-sm-10 col-md-9 position-relative z-index-1">
                 <div className="mx-auto col-lg-8 col-xl-7 text-dark text-center">
                     <h1 className="display-4 fw-normal">Comienza a crecer en el mundo digital</h1>

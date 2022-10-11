@@ -8,12 +8,14 @@ import Portafolio from '../components/pages/public/home/portafolio'
 import Nosotros from '../components/pages/public/home/Nosotros'
 import Contacto from '../components/pages/public/home/contacto'
 import Testimonios from '../components/pages/public/home/testimonios'
+import Banner from '../components/pages/public/home/Banner'
 
 export default function HomePage() {
     return (
         <>
+            <Banner/>
             <div className='mx-auto col-11 col-sm-10 col-md-9'>
-                <div className='pb-4 pb-lg-5'>
+                <div className='py-4 pb-lg-5'>
                     <Gestion/>
                 </div>
 

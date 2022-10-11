@@ -1,13 +1,10 @@
 import { useEffect } from 'react'
-import { useRouter } from 'next/router'
 import AOS from 'aos'
 import Head from "next/head"
-import Banner from "../components/layouts/layout/Banner"
 import Nav from '../components/layouts/layout/nav'
 import Footer from '../components/layouts/layout/footer'
 
 const Layout = ({page, children}) => {
-    const {pathname} = useRouter()
 
     useEffect(() => {
         AOS.init()
@@ -36,8 +33,6 @@ const Layout = ({page, children}) => {
             <div className="bg-light">
                 <header>
                     <Nav/>
-
-                    {pathname === '/' && <Banner/>}
                 </header>
 
                 <main className="py-5">

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import BtnDarkMode from './BtnDarkMode'
 import Enlaces from './Enlaces'
@@ -7,9 +7,31 @@ import Logo from './Logo'
 
 const Nav = () => {
     const [navShow, setNavShow] = useState(false)
+    const [fixed, setFixed] = useState(false)
+
+    useEffect(() => {
+        const scrollNav = () => {
+            window.addEventListener('scroll', () => {
+                const section = document.querySelector('main *')
+                const ubicacion = section.getBoundingClientRect()
+
+                if(ubicacion.top < -100){
+                    if(!fixed){
+                        setFixed(true)
+                    }
+                } else{
+                    if(!fixed){
+                        setFixed(false)
+                    }
+                }
+            })
+        }
+
+        scrollNav()
+    }, [fixed])
 
     return (
-        <nav className='py-4 nav-principal'>
+        <nav className={`nav-principal bg-light ${fixed ? 'fixed shadow-sm border-bottom py-3' : 'py-4'}`}>
             <div className='col-11 mx-auto d-flex justify-content-between align-items-center'>
                 <Logo/>
 
