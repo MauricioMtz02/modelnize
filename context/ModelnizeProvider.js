@@ -14,7 +14,7 @@ const ModelnizeProvider = ({children}) => {
         {
             name: 'Facebook',
             icon: 'facebook',
-            href: '#'
+            href: 'https://www.facebook.com/modelnize'
         },
         {
             name: 'Instagram',
